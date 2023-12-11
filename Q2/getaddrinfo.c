@@ -7,7 +7,7 @@
 #include <string.h>
 
 int main (int argc, char ** argv){
-    // gettftp
+    // Q1 : gettftp
     if (argc!=4){
         printf("Wrong usage : gettftp filename host port\n");
         exit(EXIT_SUCCESS);
@@ -18,6 +18,7 @@ int main (int argc, char ** argv){
     const char * port=argv[3];
     printf("gettftp Server : Filename : %s , Host : %s , Port : %s \n", filename, host, port);
 
+    //Q2
     struct addrinfo * result;
     struct addrinfo hints;
 
@@ -26,6 +27,8 @@ int main (int argc, char ** argv){
     hints.ai_socktype=SOCK_DGRAM;
     hints.ai_protocol=IPPROTO_UDP;
 
-    getaddrinfo(argv[2], argv[3], &hints, &result);
-
+    int status =getaddrinfo(argv[2], argv[3], &hints, &result);
+    if (status !=0){
+        printf("we can't find the host %s", argv[2]);
+    }
 }

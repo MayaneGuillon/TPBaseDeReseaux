@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main (int argc, char ** argv){
-    // gettftp
+    // Q1: gettftp
     if (argc!=4){
         printf("Wrong usage : gettftp filename host port\n");
         exit(EXIT_SUCCESS);
@@ -12,5 +12,5 @@ int main (int argc, char ** argv){
     const char * host=argv[2];
     const char * port=argv[3];
     printf("gettftp Server : Filename : %s , Host : %s , Port : %s \n", filename, host, port);
-
+    return 0;
 }

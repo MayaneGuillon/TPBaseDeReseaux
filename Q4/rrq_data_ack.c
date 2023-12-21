@@ -51,12 +51,13 @@ int main (int argc, char ** argv){
     //   Even we can use creat() function: A call to creat() is equivalent to calling open() with flags equal to O_CREAT|O_WRONLY|O_TRUNC.
 
 
-        ssize_t send = sendto(sock, rrq, strlen(argv[1]) + 9, 0, result->ai_addr, result->ai_addrlen);
 
-        if (send == -1) {
-            printf("Erreur de l'envoi de la demande");
-            exit(EXIT_FAILURE);
-        }
+    ssize_t send = sendto(sock, rrq, strlen(argv[1]) + 9, 0, result->ai_addr, result->ai_addrlen);
+
+    if (send == -1) {
+        printf("Erreur de l'envoi de la demande");
+        exit(EXIT_FAILURE);
+    }
     ssize_t recv;
     int blockNumber=1;
     int blockReceived=0;

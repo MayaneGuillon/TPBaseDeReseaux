@@ -1,0 +1,4 @@
+/usr/lsa/apps/jetbrains/clion-2022.2.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/lsa/apps/jetbrains/clion-2022.2.4/bin/ninja/linux/ninja -G Ninja -S /users/mayaguil47/CLionProjects/TPBaseDeReseaux -B /users/mayaguil47/CLionProjects/TPBaseDeReseaux/cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /users/mayaguil47/CLionProjects/TPBaseDeReseaux/cmake-build-debug

@@ -1,0 +1,3 @@
+/users/mayaguil47/CLionProjects/TPBaseDeReseaux/cmake-build-debug/CMakeFiles/TPBaseDeReseaux.dir
+/users/mayaguil47/CLionProjects/TPBaseDeReseaux/cmake-build-debug/CMakeFiles/edit_cache.dir
+/users/mayaguil47/CLionProjects/TPBaseDeReseaux/cmake-build-debug/CMakeFiles/rebuild_cache.dir

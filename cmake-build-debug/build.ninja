@@ -55,12 +55,6 @@ build CMakeFiles/TPBaseDeReseaux.dir/main.c.o: C_COMPILER__TPBaseDeReseaux_Debug
   OBJECT_DIR = CMakeFiles/TPBaseDeReseaux.dir
   OBJECT_FILE_DIR = CMakeFiles/TPBaseDeReseaux.dir
 
-build CMakeFiles/TPBaseDeReseaux.dir/Q4/rrq_data_ack.c.o: C_COMPILER__TPBaseDeReseaux_Debug /users/mayaguil47/CLionProjects/TPBaseDeReseaux/Q4/rrq_data_ack.c || cmake_object_order_depends_target_TPBaseDeReseaux
-  DEP_FILE = CMakeFiles/TPBaseDeReseaux.dir/Q4/rrq_data_ack.c.o.d
-  FLAGS = -g -std=gnu11
-  OBJECT_DIR = CMakeFiles/TPBaseDeReseaux.dir
-  OBJECT_FILE_DIR = CMakeFiles/TPBaseDeReseaux.dir/Q4
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target TPBaseDeReseaux
@@ -69,7 +63,7 @@ build CMakeFiles/TPBaseDeReseaux.dir/Q4/rrq_data_ack.c.o: C_COMPILER__TPBaseDeRe
 #############################################
 # Link the executable TPBaseDeReseaux
 
-build TPBaseDeReseaux: C_EXECUTABLE_LINKER__TPBaseDeReseaux_Debug CMakeFiles/TPBaseDeReseaux.dir/main.c.o CMakeFiles/TPBaseDeReseaux.dir/Q4/rrq_data_ack.c.o
+build TPBaseDeReseaux: C_EXECUTABLE_LINKER__TPBaseDeReseaux_Debug CMakeFiles/TPBaseDeReseaux.dir/main.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/TPBaseDeReseaux.dir
   POST_BUILD = :

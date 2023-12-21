@@ -58,6 +58,7 @@ int main (int argc, char ** argv){
             exit(EXIT_FAILURE);
         }
     ssize_t recv;
+    // used BlockSize Q6 (needed to not have too much request with the time of write function)
     int blockNumber=1;
     int blockReceived=0;
     do {

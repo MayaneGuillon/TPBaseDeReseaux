@@ -4,7 +4,7 @@
 int main (int argc, char ** argv){
     // Q1 : puttftp
     if (argc!=4){
-        printf("Wrong usage : gettftp filename host port\n");
+        printf("Wrong usage : puttftp filename host port\n");
         exit(EXIT_SUCCESS);
     }
     // alt256 srvtinfo1.ensea.fr 69

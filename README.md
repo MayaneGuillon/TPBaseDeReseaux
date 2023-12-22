@@ -25,16 +25,65 @@ Cette fonction permet de préparer une structure d'informations sur l'adresse du
 
 Plus précisémment, le code initialise la structure hints avec des paramètres tels que la famille d'adresses (IPv4 dans ce cas), le type de socket, et le protocole à utiliser. 
 
-Ensuite, la fonction getaddrinfo est appelée avec le "host" et le numéro de port. Si la résolution de l'adresse est réussie, les informations sont stockées dans la structure result.
+Ensuite, la fonction getaddrinfo est appelée avec le nom d'hôte ("host") et le numéro de port. Si la résolution de l'adresse est réussie, les informations sont stockées dans la structure result.
 
 Cette partie du code s'occupe de la préparation des informations nécessaires pour établir une connexion avec le serveur TFTP, en convertissant le nom d'hôte en une adresse IP utilisable.
 
-## Question 3 :
-*Objectif:*
+## Question 3 et 4 :
+*Objectif: implémenter le transfert de fichiers depuis le serveur TFTP vers le client (gettftp):
+(3) Réservation d'un socket de connexion vers le serveur.
+(4a)Construction d'une requête en lecture (RRQ) correctement formée et envoi au serveur.
+(4b) Réception d'un fichier constitué d'un seul paquet de données (DAT) et son acquittement (ACK).
+(4c) Réception d'un fichier constitué de plusieurs paquets de données (DAT) et de leurs acquittements respectifs (ACK).*
 
 
-## Question 4 : 
-*Objectif:*
+Pour cette question, on implémente un client TFTP (gettftp) qui utilise le protocole TFTP pour télécharger un fichier depuis un serveur TFTP distant.
+
+* **Initialisation et Résolution d'Adresse :**
+
+Le programme commence par vérifier la validité des arguments de ligne de commande.
+
+Il résout l'adresse du serveur à l'aide de la fonction getaddrinfo, comme expliqué précédemment.
+
+* **Construction et Envoi de la Requête RRQ :**
+
+Une fois l'adresse du serveur résolue, le programme construit une requête de lecture (Read Request - RRQ) en utilisant le nom du fichier passé en ligne de commande.
+
+Un socket est créé pour la communication avec le serveur.
+
+La requête RRQ est envoyée au serveur à l'aide de la fonction sendto.
+
+* **Réception et Traitement des Paquets de Données :**
+
+Le programme entre ensuite dans une boucle où il attend de recevoir des paquets de données du serveur à l'aide de la fonction recvfrom.
+
+Chaque paquet de données reçu est traité. Les données utiles (le contenu du fichier) sont extraites du paquet et écrites dans un fichier local sur le client.
+
+Format des donnée:
+![Q](img/FormatData.png)
+
+Un accusé de réception (ACK) est envoyé au serveur pour confirmer la réception du paquet de données.
+
+Format du ACK :
+![Q](img/formatACK.png)
+
+* **Gestion des Paquets de Données Multiples :**
+
+Si le fichier à télécharger nécessite plusieurs paquets, le programme répète le processus de réception et d'accusé de réception jusqu'à ce que tous les paquets soient reçus.
+
+La boucle continue jusqu'à ce qu'un paquet de données reçu soit de taille inférieure à la taille maximale autorisée (516 octets), indiquant la fin du transfert.
+
+* **Fermeture du Fichier et du Socket :**
+
+Une fois tous les paquets de données reçus et écrits dans le fichier local, le fichier est fermé.
+
+Le socket est également fermé, et le programme se termine.
+
+
+
+En résumé, ces questions illustrent les étapes du protocole TFTP pour établir une connexion avec le serveur, envoyer une requête de lecture, recevoir et écrire les données dans un fichier local, et confirmer la réception de chaque paquet de données.
+
+
 
 ![Q](img/Q4Architecture.png)
 ![Q](img/Q4DebugData.png)
@@ -45,8 +94,8 @@ Cette partie du code s'occupe de la préparation des informations nécessaires p
 ![Q](img/Q4TerminalOnes1024.png)
 ![Q](img/Q4terminal.png)
 ![Q](img/Q4terminal2.png)
-![Q](img/FormatData.png)
-![Q](img/formatACK.png)
+
+
 
 ## Question 5 : 
 *Objectif:*

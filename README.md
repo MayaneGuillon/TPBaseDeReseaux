@@ -84,9 +84,17 @@ Le socket est également fermé, et le programme se termine.
 
 En résumé, ces questions illustrent les étapes du protocole TFTP pour établir une connexion avec le serveur, envoyer une requête de lecture, recevoir et écrire les données dans un fichier local, et confirmer la réception de chaque paquet de données.
 
+**Valeur de rrq et data déterminer avec le debugger:**
+
+A l'aide du degugger, on retrouve bien que l'on a :  
+
+* **rrq** avec son opcode '01' , puis le nom du fichier 'alt256'.
+
 ![Q](img/Q4DebugRrq.png)
 
+* **data** avec son opcode '03' , puis on a '01' pour determiner de block, et enfin l'ensemble des données sur 516octets.
 ![Q](img/Q4DebugData.png)
+
 
 **Liste des fichiers créés par la suite (requête dans le terminal):** 
 ![Q](img/Q4terminal2.png)

@@ -101,18 +101,21 @@ A l'aide du degugger, on retrouve bien que l'on a :
 
 **Retour dans la console :** *alt256*
 ![Q](img/Q4TerminalAlt256.png)
+
 Pour récupérer le fichier 'alt256' (qui alterne 8 zéros puis 8 uns), on récupère un block de 260octets ce qui correspond bien aux 256o donné par le terminal sur l'image précédente. 
 **Contenu du fichier :** *alt256*
 ![Q](img/Q4terminal.png) 
 
 **Retour dans la console :** *alt256*
 ![Q](img/Q4TerminalOnes1024.png)
+
 Pour récupérer le fichier 'ones1024' ( grand fichier contenant que des uns), on récupère 2 blocks de 516octets et un de 4octets ce qui correspond bien aux 1ko donné par le terminal sur l'image précédente. 
 
 
 **Retour dans la console :** *ensea.png* 
 ![Q](img/Q4TerminalEnseapng1.png)
 ![Q](img/Q4TerminalEnseapng2.png)
+
 Pour récupérer le logo de l'ensea 'ensea.png', on recupère 41 blocks de donnée de 516 octets et un de 430 octets ce qui correspond bien au 21ko du fichier image.
 
 

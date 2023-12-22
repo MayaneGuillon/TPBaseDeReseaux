@@ -84,19 +84,33 @@ Le socket est également fermé, et le programme se termine.
 
 En résumé, ces questions illustrent les étapes du protocole TFTP pour établir une connexion avec le serveur, envoyer une requête de lecture, recevoir et écrire les données dans un fichier local, et confirmer la réception de chaque paquet de données.
 
-
-
-![Q](img/Q4Architecteture.png)
-![Q](img/Q4DebugData.png)
 ![Q](img/Q4DebugRrq.png)
-![Q](img/Q4TerminalAlt256.png)
-![Q](img/Q4TerminalEnseapng1.png)
-![Q](img/Q4TerminalEnseapng2.png)
-![Q](img/Q4TerminalOnes1024.png)
-![Q](img/Q4terminal.png)
+
+![Q](img/Q4DebugData.png)
+
+**Liste des fichiers créés par la suite (requête dans le terminal):** 
 ![Q](img/Q4terminal2.png)
 
+**Retour dans la console :** *alt256*
+![Q](img/Q4TerminalAlt256.png)
+Pour récupérer le fichier 'alt256' (qui alterne 8 zéros puis 8 uns), on récupère un block de 260octets ce qui correspond bien aux 256o donné par le terminal sur l'image précédente. 
+**Contenu du fichier :** *alt256*
+![Q](img/Q4terminal.png) 
 
+**Retour dans la console :** *alt256*
+![Q](img/Q4TerminalOnes1024.png)
+Pour récupérer le fichier 'ones1024' ( grand fichier contenant que des uns), on récupère 2 blocks de 516octets et un de 4octets ce qui correspond bien aux 1ko donné par le terminal sur l'image précédente. 
+
+
+**Retour dans la console :** *ensea.png* 
+![Q](img/Q4TerminalEnseapng1.png)
+![Q](img/Q4TerminalEnseapng2.png)
+Pour récupérer le logo de l'ensea 'ensea.png', on recupère 41 blocks de donnée de 516 octets et un de 430 octets ce qui correspond bien au 21ko du fichier image.
+
+
+
+On voit bien que le fichier alt256 a été créée et que l'on a récupérer l'image ensea.png.
+![Q](img/Q4Architecteture.png)
 
 ## Question 5 : 
 *Objectif:*

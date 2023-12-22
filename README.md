@@ -3,9 +3,11 @@
 **Mayane GUILLON et Rania DOUIA**
 
 ## Question 1 : Optimisation des Requêtes TFTP avec gettftp et puttftp
-*Objectif: *
+*Objectif: vérifier la validité des arguments de ligne de commande pour les clients gettftp et puttftp et afficher les informations associées en cas de saisie correcte.*
 
-Pour cela, on utilise
+Le code écrit gère deux clients en ligne de commande, gettftp et puttftp, pour le transfert de fichiers via le protocole TFTP. 
+Il vérifie simplement si le nombre d'arguments est correct (4 : alt256 srvtinfo1.ensea.fr 69), affichant un message d'erreur sinon. 
+S'il est correct, il extrait et affiche les informations nécessaires (nom de fichier, hôte, port) pour vérification. 
 
 
 ## Question 2 :

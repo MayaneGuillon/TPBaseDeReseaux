@@ -84,7 +84,7 @@ Le socket est également fermé, et le programme se termine.
 
 En résumé, ces questions illustrent les étapes du protocole TFTP pour établir une connexion avec le serveur, envoyer une requête de lecture, recevoir et écrire les données dans un fichier local, et confirmer la réception de chaque paquet de données.
 
-**Valeur de rrq et data déterminer avec le debugger:**
+**Valeur de rrq et data déterminées avec le debugger:**
 
 A l'aide du degugger, on retrouve bien que l'on a :  
 
@@ -114,7 +114,6 @@ Pour récupérer le fichier 'ones1024' ( grand fichier contenant que des uns), o
 ![Q](img/Q4TerminalEnseapng1.png)
 ![Q](img/Q4TerminalEnseapng2.png)
 Pour récupérer le logo de l'ensea 'ensea.png', on recupère 41 blocks de donnée de 516 octets et un de 430 octets ce qui correspond bien au 21ko du fichier image.
-
 
 
 On voit bien que le fichier alt256 a été créée et que l'on a récupérer l'image ensea.png.

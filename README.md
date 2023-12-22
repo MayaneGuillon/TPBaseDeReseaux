@@ -59,8 +59,9 @@ Le programme entre ensuite dans une boucle où il attend de recevoir des paquets
 
 Chaque paquet de données reçu est traité. Les données utiles (le contenu du fichier) sont extraites du paquet et écrites dans un fichier local sur le client.
 
-Format des donnée:
-![Q](img/FormatData.png)
+Format des donnée (valeurs du opcode)
+![Q](img/FormatData.png) 
+![Q](img/Q4Opcode.png)
 
 Un accusé de réception (ACK) est envoyé au serveur pour confirmer la réception du paquet de données.
 
@@ -85,7 +86,7 @@ En résumé, ces questions illustrent les étapes du protocole TFTP pour établi
 
 
 
-![Q](img/Q4Architecture.png)
+![Q](img/Q4Architecteture.png)
 ![Q](img/Q4DebugData.png)
 ![Q](img/Q4DebugRrq.png)
 ![Q](img/Q4TerminalAlt256.png)

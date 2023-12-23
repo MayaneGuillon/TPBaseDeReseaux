@@ -132,8 +132,11 @@ On voit bien que le fichier alt256 a été créée et que l'on a récupérer l'i
 
 ![Q](img/Q4Architecteture.png)
 
-## Question 5 : 
-*Objectif:*
+## Question 5 : Transfert de fichier vers le serveur
+*Objectif:  implémenter le transfert de fichiers du client vers le serveur (puttftp):
+(5a) Construction d'une requête en écriture (WRQ) correctement formée et envoi au serveur ; 
+(5b) Envoi d'un fichier constitué d'un seul paquet de données (DAT) et réception de son acquittement (ACK) ; 
+(5c) Envoi d'un fichier constitué de plusieurs paquets de données (DAT) et réception de leurs acquittements respectifs (ACK)*
 
 
 

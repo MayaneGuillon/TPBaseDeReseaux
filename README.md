@@ -138,6 +138,23 @@ On voit bien que le fichier alt256 a été créée et que l'on a récupérer l'i
 (5b) Envoi d'un fichier constitué d'un seul paquet de données (DAT) et réception de son acquittement (ACK) ; 
 (5c) Envoi d'un fichier constitué de plusieurs paquets de données (DAT) et réception de leurs acquittements respectifs (ACK)*
 
+Notre tentative d'implémentation du transfert de fichiers du client vers le serveur (puttftp) en utilisant le protocole TFTP :
+
+* **Construction et Envoi de la Requête WRQ :**
+
+Une requête en écriture (Write Request - WRQ) est construite avec le nom du fichier à écrire sur le serveur. L'opcode 02 est utilisé pour indiquer qu'il s'agit d'une requête d'écriture.
+
+La requête WRQ est envoyée au serveur via la fonction sendto.
+
+* **Réception de l'Acquittement Initial :**
+
+Le client attend de recevoir un acquittement (ACK) initial du serveur.
+
+* **Envoi de Paquets de Données (DAT) :**
+
+Après avoir reçu l'ACK initial, le client commence à envoyer des paquets de données au serveur. Cependant, l'opcode de retour renvoit un code d'erreur, il semble y avoir une erreur dans notre code.
+
+
 
 
 ## Question 6 : 

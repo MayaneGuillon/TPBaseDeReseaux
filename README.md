@@ -154,14 +154,7 @@ Le client attend de recevoir un acquittement (ACK) initial du serveur.
 
 Après avoir reçu l'ACK initial, le client commence à envoyer des paquets de données au serveur. Cependant, l'opcode de retour renvoit un code d'erreur, il semble y avoir une erreur dans notre code.
 
-
-
-
-## Question 6 : 
-*Objectif:*
-
-
-
+![Q](img/Q5err.png)
 
 
 
@@ -169,6 +162,9 @@ Après avoir reçu l'ACK initial, le client commence à envoyer des paquets de d
 ## Réflexions personnelles
 ### Mayane GUILLON
 
+La réalisation de ce TP sur le protocole TFTP a été une expérience formatrice. En implémentant les clients gettftp et puttftp, j'ai appliqué les concepts théoriques de programmation réseau. La résolution d'adresses, la construction des requêtes, et la gestion des paquets m'ont permis de renforcer mes compétences en développement logiciel.
+
+Ce TP a souligné l'importance de la précision dans la conformité aux spécifications du protocole. Les erreurs d'opcode et les défis de communication client-serveur ont renforcé ma capacité à débugger et à résoudre des problèmes complexes. En conclusion, cette expérience a enrichi ma compréhension pratique du développement d'applications réseau, renforçant mes compétences techniques et ma confiance dans la programmation orientée réseau.
 
 
 ### Rania DAOUIA 

@@ -59,14 +59,14 @@ Le programme entre ensuite dans une boucle où il attend de recevoir des paquets
 
 Chaque paquet de données reçu est traité. Les données utiles (le contenu du fichier) sont extraites du paquet et écrites dans un fichier local sur le client.
 
-Format des donnée (valeurs du opcode)
+**Format des donnée (valeurs du opcode):**
 
 ![Q](img/FormatData.png) 
 ![Q](img/Q4Opcode.png)
 
 Un accusé de réception (ACK) est envoyé au serveur pour confirmer la réception du paquet de données.
 
-Format du ACK :
+**Format du ACK :**
 
 ![Q](img/formatACK.png)
 

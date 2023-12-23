@@ -14,7 +14,7 @@ S'il est correct, il extrait et affiche les informations nécessaires (nom de fi
 ![Q](img/Q1Terminal.png)
 
 
-## Question 2 :
+## Question 2 : Utilisation de la fonction getaddrinfo
 *Objectif: préparer la connexion au serveur TFTP en résolvant l'adresse à partir du nom d'hôte et du numéro de port, en utilisant la fonction getaddrinfo.*
 
 Cette question concerne la résolution de l'adresse du serveur à partir du nom d'hôte et du numéro de port fournis en ligne de commande. 
@@ -29,7 +29,7 @@ Ensuite, la fonction getaddrinfo est appelée avec le nom d'hôte ("host") et le
 
 Cette partie du code s'occupe de la préparation des informations nécessaires pour établir une connexion avec le serveur TFTP, en convertissant le nom d'hôte en une adresse IP utilisable.
 
-## Question 3 et 4 :
+## Question 3 et 4 : Transfert de fichier depuis le serveur
 *Objectif: implémenter le transfert de fichiers depuis le serveur TFTP vers le client (gettftp):
 (3) Réservation d'un socket de connexion vers le serveur.
 (4a)Construction d'une requête en lecture (RRQ) correctement formée et envoi au serveur.

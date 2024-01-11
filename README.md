@@ -169,3 +169,4 @@ Ce TP a souligné l'importance de la précision dans la conformité aux spécifi
 
 ### Rania DAOUIA 
 
+Ce TP sur le protocole TFTP a été une expérience enrichissante qui a considérablement contribué à ma progression en programmation réseau. En développant les clients gettftp et puttftp, j'ai acquis une compréhension approfondie du fonctionnement du protocole, de la validation des arguments de ligne de commande à la résolution d'adresse et à la gestion des paquets de données. Les défis rencontrés, notamment lors de la tentative d'implémentation du client puttftp, ont renforcé mes compétences de débogage et m'ont appris l'importance de la précision dans la programmation conformément aux spécifications du protocol.
